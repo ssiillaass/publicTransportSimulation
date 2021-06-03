@@ -141,8 +141,6 @@ def johnsonSciPy():
     plot = plt.plot(distribution, rv.pdf(distribution)) 
     plt.show()
 
-
-
 ###Variables###
 runtime         = 120
 headway         = 10
