@@ -148,7 +148,7 @@ def transportation(env, passNo, station):
     return
 
 ########################################
-vehUnpunctuality = Distribution.normal
+vehUnpunctuality        = Distribution.normal
 u                       =0.00  #Faktor der Unpünktlichkeit in Prozent vom Headway [0,1] 
 unpunctDelay            = []
 unpunctWaiting          = []
@@ -160,6 +160,7 @@ settings_beta           = [[5, 0.43, 2.85, 0.41],[10, 0.52, 3.39, 0.36],[20, 0.6
 settings_johnson        = [[6.33, 0.7, 1-0.7, -1, 1, 0.8000000001],[10, 0.15, 1-0.15, -1.2, 1, 0.2000000001]]
 settings_uniform        = [[5],[10],[20],[30],[60]]
 
+#CHANGE passDistribution AND loop seetings... meh!
 passDistribution = Distribution.beta
 for i in settings_beta:
     
